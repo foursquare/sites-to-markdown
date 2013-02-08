@@ -1,5 +1,8 @@
 # Convert Google Sites to markdown
 
+The conversion is far from perfect, but will handle most major html tags
+besides tables.  img src attributes will point to their absolute paths on google sites.
+
 ## Prerequisites  
 
 Liberate your sites from google using [Google Sites Liberation](http://code.google.com/p/google-sites-liberation/)
@@ -17,7 +20,7 @@ Here's what it looks like for a google apps domain:
 
 ## Usage
 
-1. Make sure you're environment's jvm is 1.7
+1. Make sure your environment's jvm is 1.7
 
         # verify the version
         java -version
