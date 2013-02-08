@@ -1,6 +1,6 @@
 # Convert Google Sites to markdown
 
-## Pre Requisits
+## Prerequisites  
 
 Liberate your sites from google using [Google Sites Liberation](http://code.google.com/p/google-sites-liberation/)
 
@@ -23,7 +23,7 @@ Here's what it looks like for a google apps domain:
         java -version
         # set the JAVA_HOME to the appropriate path (like this on osx)
         export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
-        
+
 1. Run the conversion
 
         export MAVEN_OPTS=-Dfile.encoding=UTF-8
