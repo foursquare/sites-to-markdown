@@ -30,6 +30,7 @@ Here's what it looks like for a google apps domain:
 1. Run the conversion
 
         export MAVEN_OPTS=-Dfile.encoding=UTF-8
+        mvn compile
         mvn exec:java -Dexec.mainClass="jon.Convert" -Dexec.args="/path/to/exported/sites/ /path/to/markdown/destination"
 
 1. Use [gollum](https://github.com/github/gollum) to host your new wiki!
