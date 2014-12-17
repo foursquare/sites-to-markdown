@@ -161,7 +161,7 @@ public class Convert {
                   if (href.startsWith("http")){
                     builder.append(']').append('(').append(href).append(')');                  
                   } else {
-                    builder.append(']').append('(').append(fixPath(href.replaceAll("\\.\\./","")).replaceAll("-", " ")).append(')');
+                    builder.append(']').append('(').append(fixPath(href.replaceAll("\\.\\./",""))).append(')');
                   }
                   
                 }
@@ -221,7 +221,7 @@ public class Convert {
     } else {
       if (dir.getName().endsWith(".html")){
         String rebasedName = dir.getCanonicalPath().replace(basePath,"");
-        String fileName = fixPath(rebasedName.replaceAll("[/\\.]+", "-").replace("-index-html","").replace("-html","")) + ".md";
+        String fileName = fixPath(rebasedName).substring(1) + ".md";
         String[] dirsInPath = rebasedName.split("/");
         File fullOutPath = dirsInPath.length > 0 ? new File(outPath, dirsInPath[0]) : outPath;
         fullOutPath.mkdirs();
